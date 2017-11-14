@@ -1,5 +1,6 @@
 # Photorama 
-  a classical web data request func tool
+  a classical web data image request func tool （Flickr）
+  
   from:@Big Nerd Ranch
 
   
@@ -11,6 +12,7 @@
     |FlickrAPI
     |PhotoStore 
     |Photo
+    |PhotosViewController
 
 
 ###FlickrAPI
