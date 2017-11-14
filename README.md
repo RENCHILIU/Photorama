@@ -1,6 +1,7 @@
 # Photorama 
-from:Big Nerd Ranch
-a classical web data request func tool
+  a classical web data request func tool
+  from:@Big Nerd Ranch
+
 
 ## related class 
   URLSession
