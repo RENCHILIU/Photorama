@@ -2,26 +2,26 @@
   a classical web data request func tool
   from:@Big Nerd Ranch
 
-
-## related class 
-  URLSession
   
   
   
   
 # application structure
 
+    |FlickrAPI
+    |PhotoStore 
+    |Photo
+
+
 ###FlickrAPI
-     /*
+
+    
      The FlickrAPI struct will be responsible for knowing and handling all Flickr-related information.
-
+     
      This includes knowing how to:
-
      1) generate the URLs that the Flickr API expects   
      2) knowing the format of the incoming JSON         
      3) parse that JSON into the relevant model objects  
-
-     */
 
     |FlickrAPI
     |
@@ -34,12 +34,13 @@
 
           
 ###PhotoStore
-    // The PhotoStore class will handle the actual web service calls.
-    /*
+
+     The PhotoStore class will handle the actual web service calls.
+   
      The URLSession API is a collection of classes that use a request to communicate with a server in a number of ways.
      The URLSessionTask class is responsible for communicating with a server.
      The URLSession class is responsible for creating tasks that match a given configuration.
-     */
+
  
       |PhotoStore 
       |
@@ -51,6 +52,11 @@
                 -processImageRequest: parse JSON
 
 
+
+
+###PhotosViewController
+
+      UI handler
       fetchInterestingPhotos ->complete closure -> fetchImage -> complete closure -> update UI
   
   
@@ -61,9 +67,10 @@
   
   
 ###Photo
-      /*
+
+      
        a Photo class to represent each photo that is returned from the web service request.
-       */
+       
           
           
           
